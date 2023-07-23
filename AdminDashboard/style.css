@@ -1,7 +1,7 @@
 body {
     margin: 0;
     display: grid;
-    grid: 1fr / 200px minmax(400px, 1fr);
+    grid: 1fr / minmax(200px, 1fr) minmax(400px, 4fr);
 }
 
 div {
@@ -14,20 +14,34 @@ div {
     row-gap: 6px;
 }
 
-.header {
-}
+
 
 .content {
     display: grid;
     grid: 1fr / 2fr 1fr;
     column-gap: 6px;
     margin-left: 6px;
+    background-color: rgba(183, 247, 238, 0.527);
+}
+
+.bottom{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.bottom img {
+    width: 20px;
 }
 
 .boxes{
     display: grid;
     grid-template-rows: auto 1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    row-gap: 20px;
+    column-gap: 20px;
 }
 
 li {
@@ -39,11 +53,45 @@ ul {
 }
 
 h3 {
-    text-align: center;
+    text-align: left;
+    padding-left : 10px;
+    
+}
+
+.projects{
+    padding: 20px;
 }
 
 .project-box {
     border-radius: 5px;
+    display: flex;
+    background-color: white;
+}
+
+.project-box > .left-side {
+    flex: 1 1 20px;
+    background-image: linear-gradient(180deg, rgb(131, 131, 236), rgb(14, 230, 14));
+}
+.project-box > .right-side {
+    flex: 2 2 auto;
+}
+
+.side {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.side > div {
+    flex: 1;
+    padding: 10px;
+}
+
+.side > div > div
+{
+    border-radius: 30px;
 }
 
 
