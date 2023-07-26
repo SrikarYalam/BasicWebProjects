@@ -1,0 +1,79 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.library{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 0 16px;
+    background-color: aliceblue;
+    box-shadow: 0 3px 10px rgba(225, 233, 240, 0.562);
+}
+
+.log-in-button{
+    height: 40%;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: none;
+    text-align: center;
+    width: 100px;
+}
+
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(225, 233, 240, .5);
+}
+
+.content > .add-book{
+    width: 150px;
+    height: 30px;
+    align-self: center;
+    margin: 16px;
+}
+
+.book-space {
+    display: grid;
+    gap: 16px;
+    padding: 0 16px 0 16px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.book {
+    border: 1px solid black;
+    height: 200px;
+}
+
+.on{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.116);
+}
+
+.on > .add-book-popup {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
