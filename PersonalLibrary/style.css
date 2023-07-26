@@ -47,6 +47,10 @@ a{
     height: 30px;
     align-self: center;
     margin: 16px;
+    background-color: rgba(105, 105, 252, 0.199);
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.253);
 }
 
 .book-space {
@@ -57,8 +61,27 @@ a{
 }
 
 .book {
-    border: 1px solid black;
+    border: 1px solid aliceblue;
+    background-color: rgba(105, 105, 252, 0.199);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.253) inset;
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.checked {
+    position: absolute;
+    max-height: 100%;
+    font-size: 250px;
+    bottom: 25%;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
 }
 
 .on{
@@ -70,6 +93,20 @@ a{
     align-items: center;
     justify-content: center;
     background-color: rgba(128, 128, 128, 0.116);
+}
+
+#book-info {
+    font-size: large;
+    margin: 0;
+    font-weight: bold;
+}
+
+.delete {
+    background-color: rgba(236, 66, 66, 0.911);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.253) inset;
+    border: 1px aliceblue;
+    padding: 12px;
+    color: aliceblue;
 }
 
 .on > .add-book-popup {
