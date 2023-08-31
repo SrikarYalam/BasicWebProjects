@@ -5,22 +5,42 @@ body {
 }
 
 div {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+}
+
+h1 {
+    padding: 10px;
+}
+
+h2 {
+    color: white;
+    font-size: 60px;
+
+}
+
+.dashboard {
+    background-color:aliceblue;
 }
 
 .right-area {
     display: grid;
     grid: 150px 1fr / 1fr;
     row-gap: 6px;
+    border: 3px solid black;
 }
 
-
+.header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .content {
     display: grid;
     grid: 1fr / 2fr 1fr;
     column-gap: 6px;
-    margin-left: 6px;
+    
     background-color: rgba(183, 247, 238, 0.527);
 }
 
@@ -46,6 +66,7 @@ div {
 
 li {
     list-style: none;
+    padding: 10px;
 }
 
 ul {
@@ -82,6 +103,7 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     gap: 50px;
+    border: 2px solid black;
 }
 
 .side > div {
@@ -92,6 +114,15 @@ h3 {
 .side > div > div
 {
     border-radius: 30px;
+}
+
+.text{
+    padding: 10px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 20px;
 }
 
 
