@@ -4,6 +4,7 @@ body {
     grid: 1fr / minmax(200px, 1fr) minmax(400px, 4fr);
 }
 
+
 div {
     /*border: 1px solid black;*/
 }
