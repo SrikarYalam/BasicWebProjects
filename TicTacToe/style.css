@@ -1,0 +1,38 @@
+/* animation code */
+@keyframes fade-in {
+    from {color: rgba(255, 255, 255, 0)}
+    to {color:black}
+}
+
+@keyframes translate-in {
+    100% {transform: translateY(0%)}
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0%)}
+    50% {transform: translateY(-5%)}
+    100% {transform: translateY(0%)}
+}
+/* css code */
+* {
+    font-family: 'Arvo', serif;
+    
+}
+
+body {
+
+}
+
+header {
+    font-size: 10vw;
+    text-overflow: clip;
+    padding: 2vw;
+    transform: translateY(-100%);
+    animation: fade-in 1s ease-in, translate-in 1s linear forwards, bounce .5s 1s forwards;
+    
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
